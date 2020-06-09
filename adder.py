@@ -12,7 +12,7 @@ while num3 is None:
     # Prompt the user; Python will initially store the input as text
     print ('Enter an integer:')
     user_input = input()
-    # Try to convert 'user_input' to text, but guard against bad input
+    # Try to convert 'user_input' to integer, but guard against bad input
     try:
         num3 = int(user_input)
     except ValueError:

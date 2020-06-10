@@ -6,11 +6,12 @@
 # The above example should return '0'
 import sys
 
-# Parse the source degrees F from the command line’s first parameter
-degrees_f = sys.argv[1]
+# Parse the source degrees F from the command line’s first parameter, and
+# convert it to an integer
+degrees_f = int(sys.argv[1])
 
-# TODO implement logic to convert degrees Fahrenheit to Celcius
+# Convert degrees Fahrenheit to Celcius
+degrees_c = (degrees_f - 32) * 5/9
 
-degrees_c = '?'
-
-print(degrees_f + '°F is ' + degrees_c + '°C')
+# Print the result
+print('{0}°F is {1}°C'.format(degrees_f, degrees_c))

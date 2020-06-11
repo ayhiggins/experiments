@@ -13,6 +13,7 @@ if len(sys.argv) is 2 and sys.argv[1].lstrip('-').isnumeric():
 else:
     sys.exit('Usage: python fahr_to_cel.py <int>')
 
+# Disallow temperatures lower than absolute zero
 MIN_F = -459.67
 if degrees_f < MIN_F:
     sys.exit('Lowest possible Fahrenheit temperature is {0}'.format(MIN_F))

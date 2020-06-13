@@ -1,7 +1,9 @@
+#! /usr/bin/env python3
+# 
 # Simple Fahrenheit to Celcius converter
 # 
-# Usage: python fahr_to_cel.py <A_TEMP>
-# Example: python fahr_to_cel.py 32
+# Usage: fahr_to_cel.py <A_TEMP>
+# Example: fahr_to_cel.py 32
 # 
 # The above example should return '0'
 import sys
